@@ -40,14 +40,28 @@ export function Header() {
   return (
     <header
       className={cn(
-        "fixed z-50 transition-all duration-700 ease-out my-0 py-0",
+        "fixed z-50 transition-all duration-700 ease-out my-0 py-0 overflow-hidden",
         mounted ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0",
         scrolled || mobileMenuOpen
           ? "bg-primary/95 backdrop-blur-md py-4 top-4 left-4 right-4 rounded-2xl shadow-2xl shadow-black/30"
           : "bg-transparent py-4 top-0 left-0 right-0",
       )}
     >
-      <nav className="container mx-auto px-6 flex items-center justify-between md:px-[24]">
+      <div
+        className={cn(
+          "pointer-events-none absolute right-0 top-0 h-full transition-all duration-1000 ease-out",
+          scrolled || mobileMenuOpen ? "opacity-0 translate-x-8" : "opacity-100 translate-x-0",
+        )}
+      >
+        <img
+          src="https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/f3b978aa-df4b-4d71-8c18-6810f6c46328.jpg"
+          alt="Силуэт"
+          className="h-full w-auto object-cover opacity-40 animate-breathe [mask-image:linear-gradient(to_left,black,transparent)]"
+        />
+      </div>
+      <div className="pointer-events-none absolute -right-10 top-1/2 -translate-y-1/2 h-40 w-40 rounded-full bg-orange-400/20 blur-3xl animate-glow" />
+
+      <nav className="container relative z-10 mx-auto px-6 flex items-center justify-between md:px-[24]">
         <a href="/" className="flex items-center gap-0.5 group relative" onClick={scrollToTop}>
           <span className="text-white text-xl font-medium tracking-[0.2em] uppercase transition-all duration-500 group-hover:tracking-[0.32em]">
             Velve
