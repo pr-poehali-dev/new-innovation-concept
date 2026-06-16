@@ -8,7 +8,7 @@ const projects = [
     category: "Тематический номер",
     location: "Тематическое оснащение",
     year: "от 8 000 ₽",
-    image: "https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/73e6c9a9-2e79-445d-ac25-36dbd9aac43e.jpg",
+    image: "https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/ff18c961-01b0-41b2-ac9f-161460db9cf4.jpg",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const projects = [
     category: "Премиум номер",
     location: "Зеркальный потолок · бар",
     year: "от 12 000 ₽",
-    image: "https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/bbb0e253-d732-459d-b829-b5fbccf8a022.jpg",
+    image: "https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/b7a39db5-f782-49d4-ad09-264c1e61705d.jpg",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const projects = [
     category: "Wellness номер",
     location: "Джакузи · сауна",
     year: "от 15 000 ₽",
-    image: "https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/a3ac78c5-d4c6-4cd2-9275-b80e75ef2ac4.jpg",
+    image: "https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/ed978458-a1d6-4fe0-9273-feca396a312a.jpg",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const projects = [
     category: "VIP номер",
     location: "Тематическое оснащение · бар",
     year: "от 18 000 ₽",
-    image: "https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/a603c325-bfe9-4717-9e2a-d5ede6ad84e0.jpg",
+    image: "https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/d8c2571a-4316-4322-a22b-6992dcaa7206.jpg",
   },
 ]
 
