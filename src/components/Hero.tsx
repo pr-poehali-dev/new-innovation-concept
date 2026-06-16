@@ -122,7 +122,7 @@ export function Hero() {
         <img
           src="https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/5a2316dd-d56c-4679-969e-e722d4372431.jpg"
           alt="Силуэт девушки в интерьере отеля"
-          className="w-full h-full object-cover object-center animate-slow-zoom"
+          className="w-full h-full object-cover object-center animate-sway scale-110"
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30" />
@@ -138,16 +138,20 @@ export function Hero() {
           transformStyle: "preserve-3d",
         }}
       >
-        <div className="mb-72 md:mb-60 lg:mb-80">
-          <p className="text-sm tracking-[0.3em] uppercase text-center text-white/80 mb-4">{"Закрытый тематический отель 18+"}</p>
+        <div className="flex flex-col items-center justify-center min-h-[60vh]">
+          <p className="text-sm tracking-[0.3em] uppercase text-center text-white/80 mb-6 animate-fade-in-up [animation-delay:200ms] opacity-0">
+            {"Закрытый тематический отель 18+"}
+          </p>
 
           <h1
             ref={titleRef}
-            className="text-7xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.9] lg:text-8xl"
+            className="text-6xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.95] lg:text-8xl drop-shadow-2xl"
           >
-            {"Пространство"}
+            <span className="inline-block animate-fade-in-up [animation-delay:400ms] opacity-0">Пространство</span>
             <br />
-            <span className="text-orange-200">{"твоих желаний"}</span>
+            <span className="inline-block text-orange-200 animate-fade-in-up [animation-delay:650ms] opacity-0">
+              твоих желаний
+            </span>
           </h1>
         </div>
       </div>
