@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { Lock, Bath, Wine, Sparkles } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Полная приватность",
+    description: "Анонимное бронирование, отдельный вход и личное обслуживание. Никто не узнает о вашем визите.",
+    icon: Lock,
   },
   {
-    title: "Коммерческие объекты",
+    title: "Спа и релакс",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Джакузи, сауна и зоны отдыха в отдельных номерах. Идеальное место, чтобы расслабиться вдвоём.",
+    icon: Bath,
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Бар и обслуживание",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Напитки, лёгкие закуски и room-service в любое время. Всё, чтобы вечер был незабываемым.",
+    icon: Wine,
   },
   {
-    title: "Градостроительство",
+    title: "Тематическое оснащение",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Проверенный инвентарь и атмосферный декор в каждом номере. Чистота и безопасность гарантированы.",
+    icon: Sparkles,
   },
 ]
 
@@ -59,12 +59,12 @@ export function Expertise() {
         <div className="max-w-3xl mb-20">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Комфорт</HighlightedText> в каждой
             <br />
-            практикой
+            детали
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Мы продумали всё, чтобы ваш визит был приватным, безопасным и наполненным удовольствием от первой минуты до последней.
           </p>
         </div>
 

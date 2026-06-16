@@ -120,10 +120,11 @@ export function Hero() {
     <section id="hero" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hously-background.png"
-          alt="Минималистичный архитектурный интерьер"
+          src="https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/e6f399a4-4219-4ca0-bf91-df976a2cd465.jpg"
+          alt="Атмосферный интерьер отеля"
           className="w-full h-full object-cover object-center"
         />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <div
@@ -137,26 +138,20 @@ export function Hero() {
         }}
       >
         <div className="mb-72 md:mb-60 lg:mb-80">
-          <p className="text-sm tracking-[0.3em] uppercase text-center text-secondary mb-0">{"Архитектурная студия"}</p>
+          <p className="text-sm tracking-[0.3em] uppercase text-center text-white/80 mb-4">{"Закрытый тематический отель 18+"}</p>
 
           <h1
             ref={titleRef}
             className="text-7xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.9] lg:text-8xl"
           >
-            {"Создаем пространства"}
+            {"Пространство"}
             <br />
-            <span className="text-orange-200">{"для жизни"}</span>
+            <span className="text-orange-200">{"твоих желаний"}</span>
           </h1>
         </div>
       </div>
 
-      <div className="absolute inset-0 z-20 pointer-events-none">
-        <img
-          src="/images/hously-foreground.png"
-          alt="Мраморная кухонная столешница"
-          className="w-full h-full object-cover object-center"
-        />
-      </div>
+      <div className="absolute inset-x-0 bottom-0 h-1/3 z-20 pointer-events-none bg-gradient-to-t from-black/80 to-transparent" />
 
       {animationComplete && (
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce z-30">

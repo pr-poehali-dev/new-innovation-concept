@@ -4,35 +4,35 @@ import { ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Резиденция Светлая",
-    category: "Жилой дом",
-    location: "Москва, Россия",
-    year: "2024",
-    image: "/images/hously-1.png",
+    title: "Тёмный люкс",
+    category: "Тематический номер",
+    location: "Тематическое оснащение",
+    year: "от 8 000 ₽",
+    image: "https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/73e6c9a9-2e79-445d-ac25-36dbd9aac43e.jpg",
   },
   {
     id: 2,
-    title: "Павильон Стекло",
-    category: "Коммерческий объект",
-    location: "Санкт-Петербург, Россия",
-    year: "2023",
-    image: "/images/hously-2.png",
+    title: "Зеркальная комната",
+    category: "Премиум номер",
+    location: "Зеркальный потолок · бар",
+    year: "от 12 000 ₽",
+    image: "https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/bbb0e253-d732-459d-b829-b5fbccf8a022.jpg",
   },
   {
     id: 3,
-    title: "Дом у моря",
-    category: "Жилой дом",
-    location: "Сочи, Россия",
-    year: "2023",
-    image: "/images/hously-3.png",
+    title: "Спа-апартаменты",
+    category: "Wellness номер",
+    location: "Джакузи · сауна",
+    year: "от 15 000 ₽",
+    image: "https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/a3ac78c5-d4c6-4cd2-9275-b80e75ef2ac4.jpg",
   },
   {
     id: 4,
-    title: "Северный приют",
-    category: "Гостиничный комплекс",
-    location: "Казань, Россия",
-    year: "2024",
-    image: "/images/hously-4.png",
+    title: "Бордовый сьют",
+    category: "VIP номер",
+    location: "Тематическое оснащение · бар",
+    year: "от 18 000 ₽",
+    image: "https://cdn.poehali.dev/projects/b1ffa269-f77c-47b7-8a3d-fdbc18d91860/files/a603c325-bfe9-4717-9e2a-d5ede6ad84e0.jpg",
   },
 ]
 
@@ -68,14 +68,14 @@ export function Projects() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
-            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Избранные работы</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight">Наши проекты</h2>
+            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши номера</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight">Тематические апартаменты</h2>
           </div>
           <a
-            href="#"
+            href="#contact"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors group"
           >
-            Смотреть все проекты
+            Забронировать номер
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
         </div>
